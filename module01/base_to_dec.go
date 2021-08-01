@@ -1,5 +1,5 @@
 package module01
-
+// import "fmt"
 // BaseToDec takes in a number and the base it is currently
 // in and returns the decimal equivalent as an integer.
 //
@@ -36,4 +36,16 @@ func BaseToDec(value string, base int) int {
     multiplier *= base
   }
   return res
+
+
+  //Alternate using Sscanf
+  // var literal int
+  // res := 0
+  // multiplier := 1
+  // for i := len(value)-1; i>=0; i-- {
+  //   fmt.Sscanf(string(value[i]), "%x", &literal)
+  //   res += multiplier*literal
+  //   multiplier *= base
+  // }
+  // return res
 }
