@@ -14,6 +14,7 @@ func DecToBase(dec, base int) string {
 	var res string
   var rem int
   for dec > 0 {
+    // gets the base representation from charset using the remainder and resets dec to be quotient for new base
     rem = dec % base
     res = string(charset[rem]) + res
     dec = dec / base    
