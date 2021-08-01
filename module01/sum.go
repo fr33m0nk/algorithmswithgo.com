@@ -5,16 +5,16 @@ package module01
 func Sum(numbers []int) int {
 	//Using loop
 
-  // var sum int;
-  // for _, val := range numbers {
-  //   sum += val
-  // }
-  // return sum
+  var sum int;
+  for _, val := range numbers {
+    sum += val
+  }
+  return sum
 
   //Using recursion
-  if len(numbers) == 0 {
-    return 0
-  }
+  // if len(numbers) == 0 {
+  //   return 0
+  // }
 
-  return numbers[0] + Sum(numbers[1:])
+  // return numbers[0] + Sum(numbers[1:])
 }
